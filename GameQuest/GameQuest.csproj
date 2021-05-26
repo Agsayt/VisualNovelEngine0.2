@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E02FC57F-4AF9-40F2-99F5-0D5F2548EB51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GameQuest</RootNamespace>
+    <AssemblyName>GameQuest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\InventoryController.cs" />
+    <Compile Include="Classes\Node.cs" />
+    <Compile Include="Classes\NodeController.cs" />
+    <Compile Include="Classes\TextTyper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LieStory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LieStory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Nik.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Nik.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\LieStory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LieStory.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Nik.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Nik.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ангар.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\база.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Гермодверь.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Дверь к медведю.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Коридор к лифту.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Коридор с открытой дверь.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Лифт.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ноут в лаборатории.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Пароль для люка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Пингвин.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Проход к охранеpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ПупукичТруп.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Чарльз.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Хим.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
