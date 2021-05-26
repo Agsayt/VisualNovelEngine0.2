@@ -8,12 +8,20 @@ using System.Windows.Forms;
 
 namespace GameQuest.Classes
 {
+
+    /// <summary>
+    /// Основной контроллер
+    /// </summary>
     class NodeController
     {
         public static List<Node> nodeList = new List<Node>();
         TextBox textWindow = Application.OpenForms["MainForm"].Controls["outputTextBox"] as TextBox;
         private Boolean printNextMessage = false;
 
+        /// <summary>
+        /// Алгоритм при нажатии на нод
+        /// </summary>
+        /// <param name="node"></param>
         public async void nextNode(string node)
         {
             Panel mainPanel = null;

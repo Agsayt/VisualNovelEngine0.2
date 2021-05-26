@@ -9,13 +9,14 @@ using System.Windows.Threading;
 
 namespace GameQuest.Classes
 {
+    /// <summary>
+    /// Постепенный вывод текста
+    /// </summary>
     class TextTyper
     {
         
 
-        static async public         
-
-        Task
+        static async public Task
         Typer(TextBox output, string text)
         {
             for (int i = 0; i < text.Length; i++)

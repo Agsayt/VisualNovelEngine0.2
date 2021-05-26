@@ -21,6 +21,9 @@ namespace GameQuest.Classes
             NodeController.nodeList.Add(this);
         }
 
+        /// <summary>
+        /// Структура строки текста
+        /// </summary>
         public struct linesStruct
         {
             public linesStruct(string txt, Image img)
@@ -35,6 +38,9 @@ namespace GameQuest.Classes
             public Image image { get; }
         }
 
+        /// <summary>
+        /// Структура связи нода
+        /// </summary>
         public struct gatesStruct
         {
             public gatesStruct(Node node, string act, string condition = null, string reward = null)
@@ -51,11 +57,26 @@ namespace GameQuest.Classes
             
         }
 
+        /// <summary>
+        /// Добавить новую строку текста и рисунок, если нужно.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="img"></param>
         public void addLine(string text, Image img = null)
         {
             lines.Add(new linesStruct(text, img));
         }
 
+        /// <summary>
+        /// Добавить связь с нодами по окончанию текущего
+        /// Указывается название действия (текст на кнопке)
+        /// Условие, если требуется
+        /// Награда, если требуется
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="action"></param>
+        /// <param name="conditionItem"></param>
+        /// <param name="rewardItem"></param>
         public void addLink(Node node, string action, string conditionItem = null, string rewardItem = null)
         {
             gates.Add(new gatesStruct(node, action, conditionItem, rewardItem));
